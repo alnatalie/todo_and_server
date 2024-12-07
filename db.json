@@ -1,0 +1,24 @@
+{
+  "todo": [
+    {
+      "id": 2,
+      "checked": false,
+      "text": "Почитать книгу"
+    },
+    {
+      "id": 3,
+      "checked": false,
+      "text": "Сходить в магазин"
+    },
+    {
+      "text": "Почистить память",
+      "id": 4,
+      "checked": false
+    },
+    {
+      "text": "Постирать вещи",
+      "id": 5,
+      "checked": false
+    }
+  ]
+}
