@@ -1,38 +1,16 @@
+import { neon } from "@neondatabase/serverless";
+
+const sql = neon(process.env.DATABASE_URL);
+
 export default async function todo (request, response){
   const {path} = request.query;
-  const id = path[0];
+  const id = path?.[0];
 
-  // console.log('****', {id});
-
-
-  //Не нашла на верселе вкладку versel/postgress 
-  // соответсвенно не могу добавить импорт neon from @neondatabase/serverless и добавить const sql.
-  // const rows = await sql `SELECT * from todo`;
-
-    response.status(200).json(
-        // rows
-    
-        [
-            {
-              "id": 2,
-              "checked": false,
-              "text": "Почитать книгу"
-            },
-            {
-              "id": 3,
-              "checked": false,
-              "text": "Сходить в магазин"
-            },
-            {
-              "text": "Почистить память",
-              "id": 4,
-              "checked": false
-            },
-            {
-              "text": "Постирать вещи",
-              "id": 5,
-              "checked": false
-            }
-          ]
+  
+  const rows = await sql `SELECT * FROM todo`;
+  response.status(200).json(
+    rows
     );
+console.log('****', {id}, {rows});
+
 }
