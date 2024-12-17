@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",
+    "@prisma/client": "^6.0.1",
     "next": "15.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -19,7 +20,10 @@
     "swr": "^2.2.5"
   },
   "devDependencies": {
+    "@types/react": "19.0.1",
     "eslint": "^8",
-    "eslint-config-next": "15.0.3"
+    "eslint-config-next": "15.0.3",
+    "prisma": "^6.0.1",
+    "typescript": "^5.7.2"
   }
 }

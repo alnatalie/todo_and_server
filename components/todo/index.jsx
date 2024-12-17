@@ -10,7 +10,7 @@ const fetcher = async (url) => {
 };
 const 
   // URL = "http://localhost:3333/todo",
-  URL = '/api/todo',
+  URL = '/api/todoPrism',
   ADD_TODO = "add-todo",
   DELETE_ACTION = "delete",
   CHECKBOX_TOGGLE = "toggle-checkbox";
