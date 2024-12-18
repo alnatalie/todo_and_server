@@ -6,7 +6,7 @@
     "server": "npx json-server -p 3333 db.json",
     "sqlite serv": "node --experimental-sqlite --watch server.mjs",
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
   },
