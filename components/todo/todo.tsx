@@ -56,7 +56,7 @@ export function ToDoApp() {
   return (
     <>
     <fieldset onClick={onClick}> 
-        {error && <ErrorInfo  />}
+        {error && `💀 ${error.toString()}`}
 
         <input
           value={text}
