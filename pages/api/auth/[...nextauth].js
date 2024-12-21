@@ -34,8 +34,9 @@ export const authOptions = {
   ],
 }
 
-export default function Auth(...params){
-  const [req, res] = params;
-  console.log('<<<', req.method, req.query)
-  NextAuth(authOptions)(...params)
-}
+export default NextAuth(authOptions);
+// export default function Auth(...params){
+//   const [req, res] = params;
+//   console.log('<<<', req.method,  req.query);
+//   NextAuth(authOptions)(...params)
+// }
